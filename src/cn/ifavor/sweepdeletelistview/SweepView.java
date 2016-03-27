@@ -329,7 +329,9 @@ public class SweepView extends ViewGroup{
 	
 	private void closeInternel(){
 		// 如果打开状态, 重新布局（就是 onlayout 的初始布局）
-		if (isOpened){
+//		if (isOpened){
+		// 删掉了多余的判断，修复有时不能关闭的bug
+		if (true){
 			// 布局内容区域
 			mContentView.layout(0, 0, mWidthContent, mHeight);
 			
